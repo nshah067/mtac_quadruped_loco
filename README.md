@@ -9,3 +9,8 @@ System Requirements:
 3. Isaac Gym Preview 4 (https://developer.nvidia.com/isaac-gym)
 4. PPO Implementation: rsl_rl, found at https://github.com/leggedrobotics/rsl_rl
 5. NVIDIA GPU
+
+Model overview:
+![method (1)](https://github.com/nshah067/hierarchical-locomotion/assets/60299940/3975bee7-2f7e-41ac-a2d6-e33ec8a65e69)
+
+Paper: ArXiv coming soon
