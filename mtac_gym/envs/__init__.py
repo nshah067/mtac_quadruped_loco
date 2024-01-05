@@ -29,7 +29,6 @@
 # Copyright (c) 2021 ETH Zurich, Nikita Rudin
 
 from legged_gym import LEGGED_GYM_ROOT_DIR, LEGGED_GYM_ENVS_DIR
-from legged_gym.envs.a1.a1_config import A1RoughCfg, A1RoughCfgPPO
 from .base.legged_robot import LeggedRobot
 from .anymal_c.anymal import Anymal
 from .anymal_c.mixed_terrains.anymal_c_rough_config import AnymalCRoughCfg, AnymalCRoughCfgPPO
@@ -40,11 +39,6 @@ from .my_anymal.anymal_c_pyramid.anymal_c_pyramid_config import AnymalCPyraCfg, 
 from .my_anymal.anymal_c_uneven.anymal_c_uneven_config import AnymalCUnevenCfg, AnymalCUnevenCfgPPO
 from .my_anymal.anymal_c_step.anymal_c_step_config import AnymalCStepCfg, AnymalCStepCfgPPO
 from .my_anymal.anymal_testing.anymal_c_test_config import AnymalCTestCfg, AnymalCTestCfgPPO
-from .anymal_b.anymal_b_config import AnymalBRoughCfg, AnymalBRoughCfgPPO
-from .cassie.cassie import Cassie
-from .cassie.cassie_config import CassieRoughCfg, CassieRoughCfgPPO
-from .a1.a1_config import A1RoughCfg, A1RoughCfgPPO
-
 
 import os
 
@@ -52,9 +46,7 @@ from legged_gym.utils.task_registry import task_registry
 
 task_registry.register( "anymal_c_rough", Anymal, AnymalCRoughCfg(), AnymalCRoughCfgPPO() )
 task_registry.register( "anymal_c_flat", Anymal, AnymalCFlatCfg(), AnymalCFlatCfgPPO() )
-task_registry.register( "anymal_b", Anymal, AnymalBRoughCfg(), AnymalBRoughCfgPPO() )
-task_registry.register( "a1", LeggedRobot, A1RoughCfg(), A1RoughCfgPPO() )
-task_registry.register( "cassie", Cassie, CassieRoughCfg(), CassieRoughCfgPPO() )
+
 #my change
 task_registry.register("anymal_c_pyramid", Anymal, AnymalCPyraCfg(), AnymalCPyraCfgPPO())
 task_registry.register("anymal_c_stairpit", Anymal, AnymalCPyrCfg(), AnymalCPyrCfgPPO())
