@@ -31,9 +31,7 @@
 from legged_gym import LEGGED_GYM_ROOT_DIR, LEGGED_GYM_ENVS_DIR
 from .base.legged_robot import LeggedRobot
 from .anymal_c.anymal import Anymal
-from .anymal_c.mixed_terrains.anymal_c_rough_config import AnymalCRoughCfg, AnymalCRoughCfgPPO
-from .anymal_c.flat.anymal_c_flat_config import AnymalCFlatCfg, AnymalCFlatCfgPPO
-#my change
+
 from .my_anymal.anymal_c_stairpit.anymal_c_stairpit_config import AnymalCPyrCfg, AnymalCPyrCfgPPO
 from .my_anymal.anymal_c_pyramid.anymal_c_pyramid_config import AnymalCPyraCfg, AnymalCPyraCfgPPO
 from .my_anymal.anymal_c_uneven.anymal_c_uneven_config import AnymalCUnevenCfg, AnymalCUnevenCfgPPO
@@ -44,10 +42,6 @@ import os
 
 from legged_gym.utils.task_registry import task_registry
 
-task_registry.register( "anymal_c_rough", Anymal, AnymalCRoughCfg(), AnymalCRoughCfgPPO() )
-task_registry.register( "anymal_c_flat", Anymal, AnymalCFlatCfg(), AnymalCFlatCfgPPO() )
-
-#my change
 task_registry.register("anymal_c_pyramid", Anymal, AnymalCPyraCfg(), AnymalCPyraCfgPPO())
 task_registry.register("anymal_c_stairpit", Anymal, AnymalCPyrCfg(), AnymalCPyrCfgPPO())
 task_registry.register("anymal_c_uneven", Anymal, AnymalCUnevenCfg(), AnymalCUnevenCfgPPO())
