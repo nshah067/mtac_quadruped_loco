@@ -13,4 +13,4 @@ System Requirements:
 Model overview:
 ![method (1)](https://github.com/nshah067/hierarchical-locomotion/assets/60299940/3975bee7-2f7e-41ac-a2d6-e33ec8a65e69)
 
-Paper: ArXiv coming soon
+Paper: https://arxiv.org/abs/2401.03337
