@@ -46,7 +46,7 @@ class AnymalCPyraCfg( LeggedRobotCfg ):
         num_rows= 10 # number of terrain rows (levels)
         num_cols = 10 # number of terrain cols 
         terrain_kwargs = {
-            'type' : 'pyramid2'
+            'mesh_type' : 'trimesh'
         }
 
     class init_state( LeggedRobotCfg.init_state ):
