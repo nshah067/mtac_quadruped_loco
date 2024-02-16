@@ -12,6 +12,7 @@ class AnymalCPyraCfg( LeggedRobotCfg ):
         border_size = 10
         static_friction = 1.0
         dynamic_friction = 1.0
+        terrain_choice = 0
         #Lets make this more efficient and parameterized. Start fresh here.
 
     class init_state(LeggedRobotCfg.init_state):
