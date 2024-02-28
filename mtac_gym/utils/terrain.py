@@ -61,8 +61,7 @@ class Terrain:
         for j in range(self.cfg.num_cols):
             for i in range(self.cfg.num_rows):
                 difficulty = i / self.cfg.num_rows
-                choice = j % 3
-                terrain = self.make_terrain_heights(choice, difficulty)
+                terrain = self.make_terrain_heights(j % 3, difficulty)
                 self.add_terrain_to_map(terrain, i, j)
 
     def make_stairpit(self, difficulty):
