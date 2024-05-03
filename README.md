@@ -1,5 +1,5 @@
 # MTAC: Hierachical Reinforcement Learning-based Multi-gait Terrain-adpative Quadruped Controller
-This repository provides an implementation of the paper: "MTAC: Hierachical Reinforcement Learning-based Multi-gait Terrain-adpative Quadruped Controller," by Nishaant Shah, Kshitij Tiwari, and Aniket Bera.
+This repository provides an implementation of the paper: "MTAC: Hierachical Reinforcement Learning-based Multi-gait Terrain-adpative Quadruped Controller," by Nishaant Shah, and Aniket Bera.
 
 This work uses NVIDIA's Isaac Gym simulator (Paper: https://arxiv.org/abs/2108.10470), builds on the legged gym environment by Nikita Rudin, Robotic Systems Lab, ETH Zurich (Paper: https://arxiv.org/abs/2109.11978), and training code from the rsl_rl repository, by Nikita Rudin, Robotic Systems Lab, ETH Zurich. All redistributed and/or modified code retains its original license.
 
